@@ -52,6 +52,8 @@ public class Calculator implements ActionListener {
         for(int i=0;i<9;i++){
             functionButtons[i].addActionListener(this);
             functionButtons[i].setFont(myFont);
+            functionButtons[i].setForeground(Color.white);
+            functionButtons[i].setBackground(new Color(85,85,85));
             functionButtons[i].setFocusable(false);
         }
         
@@ -59,6 +61,8 @@ public class Calculator implements ActionListener {
             numberButtons[i] = new JButton(String.valueOf(i));
             numberButtons[i].addActionListener(this);
             numberButtons[i].setFont(myFont);
+            numberButtons[i].setForeground(Color.white);
+            numberButtons[i].setBackground(new Color(85,85,85));
             numberButtons[i].setFocusable(false);
         }
         
